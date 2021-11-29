@@ -1,0 +1,21 @@
+.TodoForm {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	height: 3rem;
+	gap: 1rem;
+}
+
+.TodoForm input {
+	padding: 0 0.5rem;
+	width: 100%;
+	max-width: 350px;
+	flex: 1;
+}
+
+.TodoForm .btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 5rem;
+}

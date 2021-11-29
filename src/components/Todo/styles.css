@@ -1,0 +1,17 @@
+.Todo {
+	height: 3rem;
+	border-radius: var(--border-radius);
+	padding: 0.25rem;
+	border: 1px solid var(--stroke);
+	cursor: pointer;
+	list-style: none;
+}
+
+.Todo p {
+	height: 100%;
+	color: var(--paragraph);
+}
+
+.completed {
+	text-decoration: line-through;
+}

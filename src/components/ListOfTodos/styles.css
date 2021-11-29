@@ -1,0 +1,9 @@
+.ListOfTodos {
+	display: flex;
+	flex-flow: column nowrap;
+	row-gap: 1rem;
+	align-self: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 450px;
+}
