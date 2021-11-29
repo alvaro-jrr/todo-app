@@ -2,23 +2,26 @@ import Header from "components/Header";
 import TodoForm from "components/TodoForm";
 import ListOfTodos from "components/ListOfTodos";
 import { TodosContextProvider } from "context/TodosContextProvider";
-import "./App.css";
 import SelectTodos from "components/SelectTodos";
+import { IconContext } from "react-icons";
+import "./App.css";
 
 const App = () => {
 	return (
 		<div className="App">
-			<Header />
+			<IconContext.Provider value={{ size: "1.5rem", className: "Icon" }}>
+				<Header />
 
-			<main className="App-main">
-				<TodosContextProvider>
-					<TodoForm />
+				<main className="App-main">
+					<TodosContextProvider>
+						<TodoForm />
 
-					<ListOfTodos />
+						<ListOfTodos />
 
-					<SelectTodos />
-				</TodosContextProvider>
-			</main>
+						<SelectTodos />
+					</TodosContextProvider>
+				</main>
+			</IconContext.Provider>
 		</div>
 	);
 };

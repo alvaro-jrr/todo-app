@@ -48,3 +48,9 @@ form {
 .input:focus {
 	outline: none;
 }
+
+/* Icons */
+
+.Icon {
+	color: var(--stroke);
+}
