@@ -12,7 +12,11 @@ const TodoForm = () => {
 
 		if (!todo) return null;
 
-		setTodos((prevTodos) => prevTodos.concat({ todo, isComplete: false }));
+		setTodos((prevTodos) => {
+			const id = prevTodos.length;
+
+			return prevTodos.concat({ todo, id, isComplete: false });
+		});
 
 		setTodo("");
 	};
@@ -30,19 +34,14 @@ const TodoForm = () => {
 					type="text"
 					className="input"
 					placeholder="Enter a task! (e.g: Shop groceries)"
+					title="Add todo"
 					onChange={handleChange}
 					value={todo}
 				/>
 			</label>
 
 			<button className="btn">
-				<img
-					src={AddIcon}
-					height="24"
-					width="24"
-					title="Add todo"
-					alt="Add todo icon"
-				/>
+				<img src={AddIcon} height="24" width="24" alt="Add todo icon" />
 			</button>
 		</form>
 	);

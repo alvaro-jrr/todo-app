@@ -3,6 +3,7 @@ import TodoForm from "components/TodoForm";
 import ListOfTodos from "components/ListOfTodos";
 import { TodosContextProvider } from "context/TodosContextProvider";
 import "./App.css";
+import SelectTodos from "components/SelectTodos";
 
 const App = () => {
 	return (
@@ -14,6 +15,8 @@ const App = () => {
 					<TodoForm />
 
 					<ListOfTodos />
+
+					<SelectTodos />
 				</TodosContextProvider>
 			</main>
 		</div>

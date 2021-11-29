@@ -21,7 +21,8 @@
 }
 
 input,
-button {
+button,
+select {
 	font: inherit;
 }
 
