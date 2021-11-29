@@ -16,9 +16,13 @@
 
 .btn,
 .input {
-	height: 100%;
+	height: 3rem;
 	border: none;
 	border-radius: var(--border-radius);
+}
+
+.input {
+	padding: 0 0.5rem;
 }
 
 .btn {

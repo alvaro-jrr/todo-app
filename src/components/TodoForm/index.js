@@ -33,7 +33,13 @@ const TodoForm = () => {
 			/>
 
 			<button className="btn">
-				<img src={AddIcon} title="Add todo" alt="Add todo icon" />
+				<img
+					src={AddIcon}
+					height="24"
+					width="24"
+					title="Add todo"
+					alt="Add todo icon"
+				/>
 			</button>
 		</form>
 	);
