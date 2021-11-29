@@ -26,9 +26,14 @@
 }
 
 .btn {
-	background: var(--btn);
+	background: transparent;
+	border: 2px solid var(--btn);
 	color: var(--btn-text);
 	cursor: pointer;
+}
+
+.btn:hover {
+	background: var(--btn);
 }
 
 form {
@@ -38,9 +43,8 @@ form {
 .input {
 	background: var(--form-input);
 	color: var(--form-text);
-	border: 1px solid var(--stroke);
 }
 
 .input:focus {
-	outline-color: var(--stroke);
+	outline: none;
 }

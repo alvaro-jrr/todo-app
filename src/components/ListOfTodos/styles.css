@@ -12,5 +12,5 @@
 }
 
 .ListOfTodos .Todo:nth-child(even) {
-	background: #fff;
+	background: #d3d6de;
 }
