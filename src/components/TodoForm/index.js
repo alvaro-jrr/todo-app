@@ -24,13 +24,16 @@ const TodoForm = () => {
 
 	return (
 		<form className="TodoForm" onSubmit={handleSubmit}>
-			<input
-				type="text"
-				className="input"
-				placeholder="Write something you've to do!"
-				onChange={handleChange}
-				value={todo}
-			/>
+			<label>
+				What you've to do?
+				<input
+					type="text"
+					className="input"
+					placeholder="Enter a task! (e.g: Shop groceries)"
+					onChange={handleChange}
+					value={todo}
+				/>
+			</label>
 
 			<button className="btn">
 				<img
