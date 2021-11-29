@@ -1,5 +1,5 @@
 .Todo {
-	height: 3rem;
+	min-height: 3rem;
 	padding: 0.25rem;
 	cursor: pointer;
 	list-style: none;
