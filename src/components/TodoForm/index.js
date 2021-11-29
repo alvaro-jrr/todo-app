@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import useTodos from "hooks/useTodos";
-import AddIcon from "images/add_black_24dp.svg";
+import { AiOutlinePlus } from "react-icons/ai";
 import "./styles.css";
 
 const TodoForm = () => {
@@ -34,14 +34,14 @@ const TodoForm = () => {
 					type="text"
 					className="input"
 					placeholder="Enter a task! (e.g: Shop groceries)"
-					title="Add todo"
+					title="Enter a task"
 					onChange={handleChange}
 					value={todo}
 				/>
 			</label>
 
-			<button className="btn">
-				<img src={AddIcon} height="24" width="24" alt="Add todo icon" />
+			<button className="btn" title="Add todo">
+				<AiOutlinePlus />
 			</button>
 		</form>
 	);
