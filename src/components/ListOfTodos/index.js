@@ -4,11 +4,15 @@ import Todo from "components/Todo";
 import "./styles.css";
 
 const ListOfTodos = () => {
-	const { todos } = useTodos();
+	const { todos, setTodos } = useTodos();
 
-	console.log(todos);
-
-	const completeTodo = (index) => (todos[index].isComplete = true);
+	const completeTodo = (index) => {
+		setTodos((prevTodos) => {
+			const newTodos = [...prevTodos];
+			newTodos[index].isComplete = true;
+			return newTodos;
+		});
+	};
 
 	return (
 		<ul className="ListOfTodos">

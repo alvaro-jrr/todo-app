@@ -8,13 +8,20 @@
 	gap: 1rem;
 }
 
+.TodoForm label {
+	display: flex;
+	flex-flow: column nowrap;
+	row-gap: 0.5rem;
+	width: 100%;
+}
+
 .TodoForm input {
 	width: 100%;
-	max-width: 350px;
 }
 
 .TodoForm .btn {
 	display: flex;
+	align-self: flex-end;
 	align-items: center;
 	justify-content: center;
 	width: 100%;

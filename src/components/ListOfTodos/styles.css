@@ -7,6 +7,18 @@
 	max-width: 450px;
 }
 
+.ListOfTodos .Todo:first-child {
+	border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.ListOfTodos .Todo:last-child {
+	border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.ListOfTodos .Todo:only-child {
+	border-radius: var(--radius);
+}
+
 .ListOfTodos .Todo:nth-child(odd) {
 	background: #eff0f3;
 }
