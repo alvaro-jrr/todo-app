@@ -1,21 +1,31 @@
 .TodoForm {
 	display: flex;
-	flex-flow: row nowrap;
+	width: 100%;
+	max-width: 450px;
+	align-self: center;
+	flex-flow: column nowrap;
 	justify-content: center;
-	height: 3rem;
 	gap: 1rem;
 }
 
 .TodoForm input {
-	padding: 0 0.5rem;
 	width: 100%;
 	max-width: 350px;
-	flex: 1;
 }
 
 .TodoForm .btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 5rem;
+	width: 100%;
+}
+
+@media screen and (min-width: 25.75rem) {
+	.TodoForm {
+		flex-flow: row nowrap;
+	}
+
+	.TodoForm .btn {
+		width: 5rem;
+	}
 }

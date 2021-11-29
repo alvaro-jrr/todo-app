@@ -1,8 +1,6 @@
 .Todo {
 	height: 3rem;
-	border-radius: var(--border-radius);
 	padding: 0.25rem;
-	border: 1px solid var(--stroke);
 	cursor: pointer;
 	list-style: none;
 }
