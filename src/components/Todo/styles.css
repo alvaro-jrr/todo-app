@@ -1,24 +1,41 @@
 .Todo {
+	display: flex;
+	flex-flow: row nowrap;
 	min-height: 3rem;
-	padding: 0.25rem;
 	cursor: pointer;
 	list-style: none;
-	position: relative;
-	transform: translate(0, 0);
-	transition: transform 0.25s;
-	will-change: transform;
-	top: 0;
 }
 
-.Todo:hover {
-	transform: translate(0, -0.5rem);
+.Todo-text,
+.TodoIconContainer {
+	min-height: 100%;
 }
 
-.Todo p {
-	height: 100%;
+/* Todo-text */
+
+.Todo-text {
 	color: var(--paragraph);
+	padding: 0.25rem;
+	flex: 1;
 }
 
 .completed {
 	text-decoration: line-through;
+}
+
+/* Todos Icon */
+
+.TodoIconContainer {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.TodoIconContainer:hover {
+	background-color: #ff6e6c;
+}
+
+.Todo .Icon {
+	width: 3rem;
+	flex: 1;
 }

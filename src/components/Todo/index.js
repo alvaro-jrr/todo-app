@@ -1,12 +1,24 @@
 import React from "react";
+import { AiOutlineDelete } from "react-icons/ai";
 import "./styles.css";
 
-const Todo = ({ todo, isComplete, completeTodo, id }) => {
-	const handleClick = () => completeTodo(id);
+const Todo = ({ todo, isComplete, completeTodo, deleteTodo, id }) => {
+	const handleComplete = () => completeTodo(id);
+
+	const handleTodo = () => deleteTodo(id);
 
 	return (
-		<li className="Todo" onClick={handleClick}>
-			<p className={isComplete ? "completed" : null}>{todo}</p>
+		<li className="Todo">
+			<p
+				className={`Todo-text ${isComplete ? "completed" : ""}`}
+				onClick={handleComplete}
+			>
+				{todo}
+			</p>
+
+			<span onClick={handleTodo} className="TodoIconContainer">
+				<AiOutlineDelete />
+			</span>
 		</li>
 	);
 };

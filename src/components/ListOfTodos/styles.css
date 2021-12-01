@@ -5,6 +5,7 @@
 	width: 100%;
 	height: 100%;
 	max-width: 450px;
+	flex: 1;
 }
 
 .ListOfTodos .Todo:first-child {
@@ -19,10 +20,10 @@
 	border-radius: var(--radius);
 }
 
-.ListOfTodos .Todo:nth-child(odd) {
+.ListOfTodos .Todo:nth-child(odd) p {
 	background: #eff0f3;
 }
 
-.ListOfTodos .Todo:nth-child(even) {
+.ListOfTodos .Todo:nth-child(even) p {
 	background: #d3d6de;
 }

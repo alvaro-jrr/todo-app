@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from "react";
 import useTodos from "hooks/useTodos";
 import { AiOutlinePlus } from "react-icons/ai";
+import { v4 as uuidv4 } from "uuid";
 import "./styles.css";
 
 const TodoForm = () => {
@@ -13,9 +14,9 @@ const TodoForm = () => {
 		if (!todo) return null;
 
 		setTodos((prevTodos) => {
-			const id = prevTodos.length;
+			const id = uuidv4();
 
-			return prevTodos.concat({ todo, id, isComplete: false });
+			return prevTodos.concat({ id, todo, isComplete: false });
 		});
 
 		setTodo("");

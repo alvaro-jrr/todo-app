@@ -16,21 +16,36 @@ const ListOfTodos = () => {
 
 	const todosToWatch = OPTIONS[view];
 
-	const completeTodo = (index) => {
+	const completeTodo = (id) => {
 		setTodos((prevTodos) => {
 			const newTodos = [...prevTodos];
-			newTodos[index].isComplete = true;
+
+			newTodos.map((value) => {
+				if (value.id !== id) return value;
+
+				value.isComplete = true;
+
+				return value;
+			});
+
 			return newTodos;
+		});
+	};
+
+	const deleteTodo = (id) => {
+		setTodos((prevTodos) => {
+			return prevTodos.filter((value) => value.id !== id);
 		});
 	};
 
 	return (
 		<ul className="ListOfTodos">
-			{todosToWatch.map((props) => (
+			{todosToWatch.map(({ id, ...props }, index) => (
 				<Todo
-					key={props.id}
-					id={props.id}
+					key={id}
+					id={id}
 					completeTodo={completeTodo}
+					deleteTodo={deleteTodo}
 					{...props}
 				/>
 			))}
