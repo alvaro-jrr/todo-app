@@ -4,26 +4,44 @@
 	align-self: center;
 	width: 100%;
 	height: 100%;
-	max-width: 450px;
+	max-width: 28.125rem;
 	flex: 1;
 }
 
-.ListOfTodos .Todo:first-child {
-	border-radius: var(--radius) var(--radius) 0 0;
+/* Todo Radius */
+
+.Todo:first-child .Todo-text {
+	border-radius: var(--radius) 0 0 0;
 }
 
-.ListOfTodos .Todo:last-child {
-	border-radius: 0 0 var(--radius) var(--radius);
+.Todo:first-child .TodoIconContainer {
+	border-radius: 0 var(--radius) 0 0;
 }
 
-.ListOfTodos .Todo:only-child {
-	border-radius: var(--radius);
+.Todo:last-child .Todo-text {
+	border-radius: 0 0 0 var(--radius);
 }
 
-.ListOfTodos .Todo:nth-child(odd) p {
+.Todo:last-child .TodoIconContainer {
+	border-radius: 0 0 var(--radius) 0;
+}
+
+/* Only child Todo radius */
+
+.Todo:only-child .Todo-text {
+	border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.Todo:only-child .TodoIconContainer {
+	border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* Background Todo Pattern */
+
+.Todo:nth-child(odd) p {
 	background: #eff0f3;
 }
 
-.ListOfTodos .Todo:nth-child(even) p {
+.Todo:nth-child(even) p {
 	background: #d3d6de;
 }

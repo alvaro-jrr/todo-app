@@ -28,7 +28,7 @@
 
 .btn {
 	background: transparent;
-	border: 2px solid var(--btn);
+	border: 0.125rem solid var(--btn);
 	color: var(--btn-text);
 	cursor: pointer;
 }

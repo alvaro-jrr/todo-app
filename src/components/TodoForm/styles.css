@@ -1,7 +1,7 @@
 .TodoForm {
 	display: flex;
 	width: 100%;
-	max-width: 450px;
+	max-width: 28.125rem;
 	align-self: center;
 	flex-flow: column nowrap;
 	justify-content: center;
