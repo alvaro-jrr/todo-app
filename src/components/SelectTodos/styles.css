@@ -14,5 +14,7 @@
 .SelectTodos label {
 	display: flex;
 	flex-flow: row nowrap;
-	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
 }

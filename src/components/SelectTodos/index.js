@@ -1,5 +1,6 @@
-import useView from "hooks/useView";
 import React, { useCallback } from "react";
+import useView from "hooks/useView";
+import { AiOutlineEye } from "react-icons/ai";
 import "./styles.css";
 
 const SelectTodos = () => {
@@ -14,8 +15,8 @@ const SelectTodos = () => {
 
 	return (
 		<form className="SelectTodos">
-			<label>
-				Show
+			<label title="Select Todo-list to Show">
+				<AiOutlineEye />
 				<select onChange={handleChange}>
 					<optgroup label="Todo to Show">
 						{OPTIONS.map((option, index) => {
